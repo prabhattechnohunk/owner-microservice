@@ -40,7 +40,7 @@ public class OwnerClientApp {
 	}
 	
 	@Bean
-	//@LoadBalanced
+	@LoadBalanced //necessary to use to avoid hardcoded port no
 	public RestTemplate restTemplate() {
 	    return new RestTemplate();
 	}
